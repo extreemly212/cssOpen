@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&subset=korean');
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1{
+    font-size:15px;
+    line-height:21px;
+    color:#966;
+}
+p.letter{
+    letter-spacing: 15px;
+}
+p.word{
+    word-spacing: 15px;
+}
+p.w_normal{
+    width:150px;
+    line-height:21px;
+    white-space: normal;
+}
+p.w_nowrap{
+    width:150px;
+    line-height:21px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+div.v_alignTest span{
+    vertical-align: middle;
+}
+div.v_alignTest img{
+    vertical-align: middle;
+    /* 
+        ! baseline : 문자 밑선에 정렬
+        ! sub : 아래 첨자
+        ! super : 위 첨자
+        ! text-top : 문자 윗선을 대상의 밑선으로 해서 정렬
+        ! top : 위쪽 정렬
+        ! bottom : 아래쪽 정렬
+        ! % : 수직선의 %로 정렬 위치를 지정 (유동적)
+    */
+}
+p.t_indent{
+    text-indent: 20px; font-size:40px;
+}
+
+a{
+    display:block;
+    margin-bottom: 15px;
+    font-size:20px;
+}
+a.t_deco_N{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.t_deco_U{
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+a.t_deco_O{
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+a.t_deco_T{
+    text-decoration: line-through;
+    text-transform: none;
+}
+p.DR_ltr{
+    direction: ltr;
+}
+p.DR_rtl{
+    direction: rtl;
+}

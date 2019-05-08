@@ -1,0 +1,117 @@
+.tagSelector h1{color: #0c0; font-size:20px;}
+.tagSelector p{color:#0c3; font-size:15px;}
+.tagSelector span{color: #0c6; font-size:12px;}
+/* ? tag를 선택하여 style 할 수 있다. */
+
+.idSelector #exampleText{
+    font-size:12px; color: navy; border:1px solid navy;
+}
+/* ? id를 선택하여 style 할 수 있다. */
+
+.classSelector .f_size{font-size:20px;}
+.classSelector .f_weight{font-weight:bold;}
+.classSelector .f_color{color: #9cf;}
+/* ? class를 선택 하여 style, 다중 클래스로 분리작업도 가능하다.*/
+
+.attrSelector fieldset{
+    border: 1px solid #dadada; background-color: #fafafa;
+}
+.attrSelector legend{
+    border: 1px solid #dadada; background-color: #fafafa;
+    padding: 5px; font-size:12px;
+}
+.attrSelector ul li{display: block;}
+.attrSelector ul li label, .attrSelector ul li input{
+    vertical-align: middle;
+}
+.attrSelector ul li label {display:inline-block;}
+.attrSelector ul li input[type='text']{
+    background-color:#0cf;
+    border: 1px solid #555;
+    line-height:21px; padding:2px 5px;
+}
+.attrSelector ul li input[type='password']{
+    background-color:darkred;
+    border: 1px solid #f00;
+    color: white; line-height: 21px; padding: 2px 5px;
+}
+.attrSelector ul li input[type='radio']{
+    width: 15px; height: 15px;
+}
+/* ?attr 선택자는 type이 있는 객체면 type 별로 선택 할 수 있다. */
+
+.directSelector > h1{
+    font-size:14px; color:#66f;
+}
+.directSelector > span{
+    font-size:12px; color:#906;
+}
+/*
+    ? bubble
+    * 구조적으로 다른 동일태그를 제외하고, 직계 자손 객체 태그에 동일한
+    * 스타일을 적용 할 수 있다.
+*/
+.directSelector ul > li{font-size:20px;}
+.directSelector ul > li ol > li{
+    font-size: 12px;
+}
+
+/* .stringAttrSelector img{width:100px; height:100px;} */
+.stringAttrSelector img[src$=png]{
+    border: 10px solid #f00;
+}
+.stringAttrSelector img[src$=jpg]{
+    border: 5px dotted #0f0;
+}
+.stringAttrSelector img[src$=gif]{
+    border:1px double #00f;
+}
+/*
+    ? 문자유형선택자
+    * 해당 문자열 유형으로 분리 적용 할 수 있다.
+ */
+ .sameSelector h1+h2{
+     font-size:40px; color:#fcf;
+ }
+ .sameSelector h1~h2{
+     background-color: #555;
+ }
+ /*
+    ? 동위 선택자
+    * a+b는 a 바로 뒤에 위치하는 b, a~b는 a 뒤에 오는 모든 b
+ */
+ .statusSelector input[type='checkbox']:checked + label{
+     line-height:0px;
+    }
+.statusSelector label{
+    vertical-align: middle; overflow: hidden;
+    display:inline-block; line-height: 25px;
+    transition-duration: 1s;
+}
+/*
+    ? 상태선택자 + 동위선택자
+    * 1. checkbox status 가 checked일 경우, 바로 뒤 label height = 0;
+    ! :checked 체크된상태, :focus 초점 맞춰진 상태
+    ! :enabled 사용가능, :disabled 사용 불가능
+
+    * 2. label의 기본 설정 (css)
+    ! height 가 실존해야한다.
+    ! display는 block 계열, overflow는 방향(x,y,both)의 hidden
+
+    * 3. 벤더프리픽스를 통한 각 브라우저 별 애니메이션 설정
+    ! transition-duration
+*/
+.statusSelector input[type='text']:enabled{
+    background-color: black; color:deeppink;
+}
+.statusSelector input[type='text']:disabled{
+    background-color:deeppink; color:black;
+}
+.normalSelector ul{overflow:hidden; list-style: none;}
+.normalSelector ul li{margin:0; padding:0; float:left; padding:15px;}
+.normalSelector ul li:first-child{border-radius: 25px 0 0 25px;}
+.normalSelector ul li:last-child{border-radius: 0 25px 25px 0;}
+.normalSelector ul li:nth-child(odd){
+    background-color:#444; color:white;
+}
+.normalSelector ul li:nth-child(even){background-color:#0cf;}

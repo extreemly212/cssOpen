@@ -1,0 +1,33 @@
+.wrap{
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+}
+a{
+    font-size: 20px; 
+    margin-left: 100px;
+    display:inline-block;
+}
+a.test{
+    margin-bottom:5px;
+}
+a:link{
+    color: green; text-decoration: none;
+}
+a:hover{
+    font-size:40px; color: #fc0; text-decoration: underline;
+}
+a:active{
+    font-size:30px; text-decoration: overline;
+}
+a:visited{
+    text-decoration:none; color:red;
+}
+/*
+ ? a tag css 는 상태값이 필요 없을 때는 디자인 css 를 다 기입 한다.
+ ? 반대로 상태 변화가 필요 할 때는 배치에 관련된 css만 기입한다.
+ ! :link - link 기본 상태.
+ ! :hover - link 에 마우스 커서가 오버된 상태.
+ ! :active - link 에 마우스 버튼이 눌려있는 상태.
+ ! :visited - link 가 실행 된 적(active)이 있는 상태. 
+*/

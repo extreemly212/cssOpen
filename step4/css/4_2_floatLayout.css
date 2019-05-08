@@ -1,0 +1,37 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffc;
+}
+header{
+    background-color:#cff;
+}
+header nav{
+    background-color: #9f9;
+}
+.wrap{
+    margin-bottom:30px;
+}
+.wrap:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.wrap aside{
+    width: 200px; background-color: #f96; float: left;
+}
+.wrap section{
+    width: 760px; background-color: #66f; float: left;
+}
+.wrap section article{
+    background-color: #cff;
+}
+footer{
+    background-color: #f9f;
+}
+/*
+? float
+* float 옵션 중 left, right의 활용도가 제일 높다.
+* 단, right를 사용할 땐 정렬 역시 우측을 기준으로 정렬된다.(rtl)
+! float 가 적용되면 적용된 객체들의 부모 높이값이 상실 된다.
+! 이를 복구 하기 위해서는 :after 를 이용한 canceler 를 사용해준다.
+! :after{content:''; display:block; visibility: hidden; clear:both;}
+*/

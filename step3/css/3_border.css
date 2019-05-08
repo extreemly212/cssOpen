@@ -1,0 +1,38 @@
+div{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.singleBox{
+    border: 3px solid #60f;
+}
+
+.multiBox{
+    /* border-width: 1px 3px 10px 25px;
+    border-style: solid dotted dashed double;
+    border-color: #1958b7 #f06 #66f #fc6; */
+    border-top: 1px solid #1985b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #66f;
+    border-left: 25px double #fc6;
+    /*
+        ? border 개별 설정
+        ? border-top, border-right, border-bottom, border-left 순서
+        ? 또는 border: 5px 10px; 같이 상하, 좌우로 묶어도 가능
+        ? solid:직선, dotted:점선, dashed: 파선, double:두 줄
+    */
+}
+.grooveBox{
+    border: 20px groove #999;
+}
+
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #930;
+}
+.outsetBox{
+    border: 20px outset #f0f;
+}

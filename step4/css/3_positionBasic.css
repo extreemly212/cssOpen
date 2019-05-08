@@ -1,0 +1,30 @@
+.wrap{
+    position: relative; width:400px; height:100px; margin:0 auto;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.wrap div{
+    width: 100px; height:100px; border: 1px solid black; 
+    position:absolute;
+}
+.wrap .redBox{
+    background-color: red; left: 10px; top: 10px; z-index:100;
+}
+.wrap .greenBox{
+    background-color: green; left: 50px; top: 50px; z-index:10;
+}
+.wrap .blueBox{
+    background-color: blue; left:90px; top:90px; color:#fff; z-index:1;
+}
+/*
+    ?position
+    * relative : 자신을 기준으로 한 상대좌표.
+    * absolute : relative안에 없을 시 browser 절대 좌표기준.
+    * z-index : 수 가 클수록 위에 노출 (숫자는 1,10,100,1000 방식 추천)
+
+    ?overflow
+    * overflow : x,y축 둘다.
+    * overflow-축 : x축 이나 y축 만 사용.
+    ! 속성값 : scroll - 스크롤 발생, hidden - 감춤(자르기),
+    !          auto - 부모 크기를 넘을 시 scroll, 아닐시 hidden 상태.
+*/

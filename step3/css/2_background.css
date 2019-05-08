@@ -1,0 +1,64 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../images/BackgroundBack.png") no-repeat center;
+    /*
+        ? background: 대상, 반복설정, 위치(position);
+        ? size,attachment만 별개
+    */
+    background-size : contain;
+
+    /*
+    background-image:
+    url("../images/BackgroundFront.png"),
+    url("../images/BackgroundBack.png");
+
+        ? background-image를 통해 원하는 대상의 배경을 설정.
+        ? css3에서는 2개 이상의 배경을 설정 할 수 있다.
+
+    background-repeat: no-repeat;
+
+        ? background-repeat는 배경의 반복 패턴을 설정.
+        ? no-repeat는 x,y축 모두 반복 금지.
+        ? repeat-x, y 는 각 축 방향으로 패턴 설정.
+
+    background-position:center;
+
+        ? background-position 은 배경의 위치를 지정.
+        ? top, right, bottom, left, center 방향으로 지정 할 수 있다.
+        ! 어쩔 수 없는 경우에는 수치를 사용 하기도 한다.(px, %)
+
+    background-attachment: fixed;
+        ? background-attachment: fixed 스크롤 움직임과 상관없이 배경고정.
+    background-size: 250px;
+        ? background-size는 css3 추가 속성.
+        ? background 사이즈 규정.
+        ? 2개 이미지 사용 시 (예)
+        ! 1. 띄어쓰기로 구분 안할 경우 전체(2개,width,height) 적용.
+        ! 2. 띄어쓰기로 구분 할 경우 전체 width, height 별도 적용.
+        ! 3. , 로 구분시 각각 1개씩 width, height 별도 적용.
+        ? contain은 width를 기준으로 이미지 비율 고정 100% 적용.
+        ? cover는 대상 공간의 width, height 100% 적용.
+    */
+
+}
+p{
+    height: 8000px;
+}
+div{
+    width: 400px;
+    border: 15px solid transparent;
+    padding: 15px;
+    background-clip: border-box;
+    /*
+        ? background-clip
+        ? border-box : border(테두리)영역 까지 적용.
+        ? padding-box : padding(안쪽여백)영역 까지 적용.
+        ? content-box : content(실 내용)영역 까지 적용.
+    */
+    background-image:url("../images/pt.gif");
+}
