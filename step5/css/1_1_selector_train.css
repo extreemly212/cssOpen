@@ -1,0 +1,14 @@
+body{margin: 0;}
+article {
+    width: 1000px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+article > *:first-child{
+    float: left; font-size:100px;
+    line-height: 110px; width: 150px;
+    margin: 0 20px 10px 0;
+    background-color: gray; color:white;
+    text-align: right;
+}
+article p{margin:0; font-size:14px;}

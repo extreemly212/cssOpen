@@ -195,3 +195,40 @@ data- 라는 것은 사용자 지정 속성으로 웹 표준에서 인정 해주
 ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 기본으로 공급하는
 모바일에서의 리스트 출력 작동법 및 스타일 이 된다.
 */
+
+.reactionSelector h1,
+.reactionSelector p{color: white;}
+.reactionSelector h1::selection{
+    background-color: black; color: yellow;
+}
+.reactionSelector p::selection{
+    background-color: green; color: blue;
+}
+/* ?::selection - 웹접근성 보완을 위한 수단. (mono tone의 디자인 등)*/
+
+.notSelector input:not([type='password']){
+    background-color: red;
+    color: white;
+}
+/* ?:not - 선택한 대상을 제외한 나머지대상(ex> input) 에 적용 */
+
+.sameAttrSelector input[class ~= "button"]{
+    background-color: red; color: white; 
+    padding: 10px;
+}
+.sameAttrSelector h1[title ~= "제목"]
+{color: red;}
+.sameAttrSelector h2[title ^= "남자"]
+{color: blue;}
+.sameAttrSelector h2[title *= "화장실"]
+{background-color: yellow;}
+/* 
+    ? 속성값일치선택자
+    ! attr로 검출하여, 스타일 적용or 속성값일치여부 체크
+    * [title ~= "제목"] "제목"을 포함하는 속성 값 선택.
+    ! 문자는 띄어쓰기 유의
+    * ^(캐럿)을 이용하면 해당 텍스트로 시작하는 것만 선택.
+    * [href $=".zip"] "파일 확장자" 별 선택.
+    * [class |= "red] "시작 단어"가 중복되는 모두 선택.
+    * [class *= "accent"] " accent가 들어가는 모두 선택. 
+*/
