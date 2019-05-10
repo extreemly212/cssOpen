@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float Layout-HW</title>
+    <link rel="stylesheet" href="css/4_4_floatLayout3.css">
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <div class="searchBox">
+            <input type="search" name="" id="searchBar" title="검색어를 입력하세요." />
+            <input type="button" value="검색" for="searchBar">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">menu1</a>
+                </li>
+                <li>
+                    <a href="#">menu2</a>
+                </li>
+                <li>
+                    <a href="#">menu3</a>
+                </li>
+                <li>
+                    <a href="#">menu4</a>
+                </li>
+                <li>
+                    <a href="#">menu5</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrap">
+        <div class="imgBox">
+            <img src="https://via.placeholder.com/1000x150" alt="임시이미지">
+            <!-- img에 설명및 캡션이 필요할 시에 figure -->
+        </div>
+        <ul class="latestList1">
+            <li class="title">latestBoard1</li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+        </ul>
+        <ul class="latestList2">
+            <li class="title">latestBoard2</li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+        </ul>
+        <ul class="latestList3">
+            <li class="title">latestBoard3</li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+            <li>content <span>2016.05.20</span></li>
+        </ul>
+    </div>
+    <!-- 
+        ul li 에 title을 두는것은 옳지 않다.
+        외부로 공간을 마련하고 그 공간 tag 와 컨텐츠 ul tag
+        를 하나로 묶는 div를 하나더 만들어 주는 것이 효율적.
+     -->
+    <footer>
+        <span>footer Area</span>
+    </footer>
+</body>
+</html>
