@@ -1,73 +1,77 @@
 html,body{
     margin:0; height:100%; font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
 }
-.wrap{height:100%; background-color:black;}
-.wrap .loginBox{
+body > div{height:100%;}
+body > div > div:first-of-type{
     width:50%; height:50%;
+    min-height: 295px;
     position: absolute;
     top:25%; left:25%;
     background-color:#262626;
 }
-.wrap .loginBox nav{
+body > div > div:first-of-type nav{
     margin-bottom: 25px;
 }
-.wrap .loginBox nav ul{margin:0; padding:0;}
-.wrap .loginBox nav ul:after{
+body > div > div:first-of-type nav ul{margin:0; padding:0;}
+body > div > div:first-of-type nav ul:after{
     content:''; display: block; visibility: hidden;
     clear: both;
 }
-.wrap .loginBox nav ul li{
+body > div > div:first-of-type nav ul li{
     float:left; width:25%; display:block;
     background-color:#3b3b3b;
 }
-.wrap .loginBox nav ul li a{
+body > div > div:first-of-type nav ul li a{
     display: inherit; text-decoration: none;
     padding:10px 0;
     text-align:center;
     color: #ea0e52; font-size: 12px;
     text-transform: capitalize;
 }
-.wrap .loginBox nav ul li a:hover,
-.wrap .loginBox nav ul li.currentStat a{
+body > div > div:first-of-type nav ul li a:hover,
+body > div > div:first-of-type nav ul li.currentStat a{
     background-color:#ea0e52; color: white;
 }
-.wrap .loginBox h1{
+body > div > div:first-of-type h1{
     margin:0 0 25px 0;
     font-size:14px; color: white;
     text-transform: capitalize; text-align:center;
 }
-.wrap .loginBox fieldset{
+body > div > div:first-of-type fieldset{
     border: none; padding: 0;
     width: 90%; margin:0 auto;
 }
-.wrap .loginBox fieldset ul{
+body > div > div:first-of-type fieldset ul{
     margin:0; padding:0; list-style:none;
 }
-.wrap .loginBox fieldset ul li{
+body > div > div:first-of-type fieldset ul li{
     margin-bottom:25px;
     overflow: hidden;
 }
-.wrap .loginBox fieldset ul li >*{
+body > div > div:first-of-type fieldset ul li >*{
     float:left;
 }
-.wrap .loginBox fieldset ul li label{
+body > div > div:first-of-type fieldset ul li label{
     display: block; width:15%; text-align: center;
     background-color:#ea0e52; padding:12px 0;
     font-size: 12px; text-transform: uppercase;
     font-weight:bold; color:white;
 }
-.wrap .loginBox fieldset ul li input{
+body > div > div:first-of-type fieldset ul li input{
     width:80%; border:none;
     font-size:12px; padding:12px 2.5%;
 }
-.wrap .loginBox fieldset ul li input:focus{
+body > div > div:first-of-type fieldset ul li input:focus{
     background-color:#ea0e52; color:white;
 }
-.wrap .loginBox input[type='submit']{
-    background-color: #3e3e3e;
-    width: 90%; margin:0 auto; color:#ea0e52;
-    border:none;  display:block; padding:10px 0;
+
+body > div > div:first-of-type input[type='submit']{
+    border: none; display: block;
+    width: 90%; margin:0 auto;
+    font-size:12px; padding: 10px 0;
+    background-color: #3e3e3e; color: #f5f5f5;
 }
-.wrap .loginBox input[type='submit']:hover{
-    background-color:#ea0e52; color: white;
+body > div > div:first-of-type input[type='submit']:hover{
+    background-color:#ea0e52; color:black;
 }
