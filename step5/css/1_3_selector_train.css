@@ -66,6 +66,7 @@ html,body{
 .wrap .loginBox input[type='submit']{
     background-color: #3e3e3e;
     width: 90%; margin:0 auto; color:#ea0e52;
+    border:none;  display:block; padding:10px 0;
 }
 .wrap .loginBox input[type='submit']:hover{
     background-color:#ea0e52; color: white;
