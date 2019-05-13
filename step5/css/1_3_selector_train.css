@@ -36,3 +36,37 @@ html,body{
     font-size:14px; color: white;
     text-transform: capitalize; text-align:center;
 }
+.wrap .loginBox fieldset{
+    border: none; padding: 0;
+    width: 90%; margin:0 auto;
+}
+.wrap .loginBox fieldset ul{
+    margin:0; padding:0; list-style:none;
+}
+.wrap .loginBox fieldset ul li{
+    margin-bottom:25px;
+    overflow: hidden;
+}
+.wrap .loginBox fieldset ul li >*{
+    float:left;
+}
+.wrap .loginBox fieldset ul li label{
+    display: block; width:15%; text-align: center;
+    background-color:#ea0e52; padding:12px 0;
+    font-size: 12px; text-transform: uppercase;
+    font-weight:bold; color:white;
+}
+.wrap .loginBox fieldset ul li input{
+    width:80%; border:none;
+    font-size:12px; padding:12px 2.5%;
+}
+.wrap .loginBox fieldset ul li input:focus{
+    background-color:#ea0e52; color:white;
+}
+.wrap .loginBox input[type='submit']{
+    background-color: #3e3e3e;
+    width: 90%; margin:0 auto; color:#ea0e52;
+}
+.wrap .loginBox input[type='submit']:hover{
+    background-color:#ea0e52; color: white;
+}
