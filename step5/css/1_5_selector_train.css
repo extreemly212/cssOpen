@@ -1,0 +1,10 @@
+.wrap{max-width:460px; margin:0 auto;}
+.wrap fieldset{
+    border-radius: 10px; border-color:darkblue;
+}
+.wrap fieldset legend{
+    border-radius: 5px; background-color:darkblue;
+    color:white; font-size:14px; padding:5px 10px;
+}
+.wrap fieldset ul
+{padding:0; list-style: none;}

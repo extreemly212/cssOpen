@@ -1,1 +1,37 @@
 .wrap{max-width:960px; margin:0 auto;}
+.wrap fieldset{
+    border:1px solid red;
+    margin:0 0 25px 0;
+    padding: 15px 20px 0 20px;
+}
+
+.wrap input{vertical-align: middle;}
+.wrap label{display: inline-block;}
+.wrap textarea{
+    display: block;
+    width: 95%;
+    border: 1px solid blue;
+    padding: 10px 1%;
+    margin: 25px auto;
+    height: 150px;
+    overflow-y:scroll;
+    transition-duration:1s;
+    resize: none;
+}
+
+/* 
+    ? 부모 margin , padding 과 textarea width의 관계
+    * 1. 부모(fieldset)와 자식(textarea)의 기본 css 확인.
+    * 2. textarea의 스크롤바 및 width % 로 인한 간섭수정.
+    * 3. 이후 부모의 간섭요소 (margin, padding, border..)
+    *    등을 제거하여 부모 자식간 간섭을 없애준다.
+    ! resize : none; 임의로 textarea의 크기조절을 못하게
+    ! transition : 변형시작전 인 상태에 부여할 것. 
+*/
+.wrap input[type='checkbox']:checked + textarea{
+    height: 0px;
+    padding: 0 1%;
+    /* 
+        ! 변형에 필요한 요소만 적을 것.
+    */
+}
