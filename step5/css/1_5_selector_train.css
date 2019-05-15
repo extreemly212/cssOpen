@@ -8,3 +8,49 @@
 }
 .wrap fieldset ul
 {padding:0; list-style: none;}
+.wrap fieldset ul li{
+    margin-bottom:15px; font-size: 14px;
+}
+.wrap fieldset ul li:last-child{text-align:right;}
+.wrap fieldset ul li label:first-child{
+    min-width:100px; display: inline-block;
+}
+/* ! li 안의 label 중 checkbox 뒤 label만 제외 */
+.wrap fieldset ul li input{
+    vertical-align: middle; padding:5px 10px;
+}
+.wrap fieldset ul li input,
+.wrap fieldset ul li select{
+    background-color: white;
+    transition-duration: 1s;
+}
+.wrap fieldset ul li input:focus,
+.wrap fieldset ul li select:hover{
+    background-color: #949494;
+    
+}
+.wrap fieldset ul li input[type='checkbox'] + label{
+    padding: 5px;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+.wrap fieldset ul li input[type='checkbox']:checked + label{
+    padding: 2px;
+    background-color: darkblue;
+    font-size: 12px;
+    color:white;
+}
+.wrap fieldset input[type='submit'],
+.wrap fieldset input[type='reset']{
+    display: block; float:left;
+    width: 45%; border: none;
+    padding: 10px 0;
+    color: white;
+}
+.wrap fieldset input[type='submit']{
+    background-color: navy;
+}
+.wrap fieldset input[type='reset']{
+    margin-left: 10%;
+    background-color: darkred;
+}
