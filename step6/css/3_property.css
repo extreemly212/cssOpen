@@ -1,0 +1,18 @@
+.displayProperty span:first-of-type
+{display:block; background-color:#fc9393;
+text-align: center; }
+.displayProperty span:nth-of-type(2)
+{display:inline-block; width: 50%; background-color:moccasin;
+text-align: center; padding:20px;}
+.displayProperty span:nth-of-type(3)
+{display:inline; width:50%; background-color:coral;
+text-align: center; padding:20px;}
+.displayProperty span:last-of-type{display:none;}
+
+/* 
+    ? display의 속성은 총 4가지
+    * block - block = width: 100%, 위에서 아래로 나열.
+    * inline-block - width(ok), inlinetype(옆으로)나열.
+    * inline - width(x), margin,padding(o). 옆으로나열.
+    * none - render(화면출력) 안함. source는 load함. 
+*/
