@@ -1,0 +1,22 @@
+html{font-size: 15px;}
+body{margin: 0;}
+.wrap{
+    width:75rem; background-color:#fcf; 
+    margin:0 auto;
+}
+.wrap header{height: 3rem; background-color:#c30;}
+
+.wrap section:after{
+    content:''; display: block; visibility: hidden;
+    clear: both;
+}
+.wrap section aside{
+    float:left;  width: 20rem; 
+    height: 30rem; background-color: darkslateblue;
+    color: white;
+}
+.wrap section article{
+    width: 55rem; height:30rem; 
+    background-color:salmon; float:left;
+}
+.wrap footer{height: 3rem; background-color: greenyellow;}

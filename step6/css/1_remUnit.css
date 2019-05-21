@@ -1,0 +1,54 @@
+html{
+    font-size:16px; 
+    /* ? default web font size */
+}
+
+body,h1,h2,p{margin:0; padding:0;}
+
+.remLayout{
+    background-color: cornflowerblue;
+    width: 55rem; margin: 0 auto;
+}
+.remLayout header{
+    background-color: #ff6767;
+    padding: 2rem; margin-bottom: 0.625rem;
+}
+.remLayout header h1{
+    font-size: 2rem; margin-bottom:0.625rem;
+}
+.remLayout header p{
+    font-size: 0.75rem; line-height: 1rem;
+}
+
+.remLayout article{
+    background-color: coral;
+    padding: 2rem; margin-bottom: 0.625rem;
+}
+.remLayout article h2{
+    font-size: 1.5rem; margin-bottom: 0.625rem;
+}
+.remLayout article p{
+    font-size: 0.75rem; line-height: 1rem;
+}
+
+.remLayout footer{
+    background-color: #7eff81;
+    padding: 2rem; text-align: center;
+}
+.remLayout footer a{
+    color: black; text-decoration: none;
+    font-size: 0.75rem;
+}
+/* 
+    ? rem
+    * rem 단위는 브라우저의 기본 font-size 영향을 받는다.
+    ! browser = device
+    * 사용자가 브라우저 자체의 기본폰트를 설정 하는 것에
+    * 따라 layout 및 font size 가 변경 되도록 할 수있다.
+    ! ex> 75% 100% 의 75가 되지만, 75rem 이 되면
+    ! default browser font-size 인 16px * 75 = 1200
+    ! 이라는 값으로 설정 될 수 있다.
+    * padding, margin, border-width 등 모두 가능.
+    todo - 단위 환산 사이트 : http://pxtoem.com
+    */
+  
