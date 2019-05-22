@@ -16,3 +16,7 @@ text-align: center; padding:20px;}
     * inline - width(x), margin,padding(o). 옆으로나열.
     * none - render(화면출력) 안함. source는 load함. 
 */
+.visibilityProperty span,
+.visibilityProperty table{
+    background-color:#ff6a00; display: block;
+}
