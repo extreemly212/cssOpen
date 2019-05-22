@@ -20,3 +20,70 @@ text-align: center; padding:20px;}
 .visibilityProperty table{
     background-color:#ff6a00; display: block;
 }
+.visibilityProperty span:first-of-type{
+    visibility: visible;
+}
+.visibilityProperty span:nth-of-type(2){
+    visibility: hidden;
+}
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{visibility: collapse;}
+
+/* 
+    ? visibility의 속성은 총 3가지
+    * visible = 보여주기, hidden = 감추기(영역존재)
+    * collapse = table만 감추기(영역최소화)
+*/
+
+.opacityProperty ul{display: block; padding:0;}
+.opacityProperty ul::after{content:''; display: block; visibility: hidden; clear: both;}
+.opacityProperty ul li{
+    display: block; float:left; width: 33.33%;
+    background-color:black; position: relative;
+    cursor: pointer;
+}
+.opacityProperty ul li figure{margin:0;}
+.opacityProperty ul li figure img{
+    width:100%; opacity: 0.3; transition-duration: 1s;
+    border: none;   
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li dl{
+    display:block; position: absolute;
+    top:28.5%; left:28.5%;
+    width:33%; background-color:rgba(255,255,255,0.5);
+    padding:4.5%; border-radius: 20px;
+    transition-duration: 1s;
+}
+.opacityProperty ul li:hover dl{
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 0; width:100%;
+    left:0; padding:4.5% 0;
+}
+.opacityProperty ul li dl > *{
+    text-align:center;
+}
+.opacityProperty ul li dl dt{
+    font-size:13px; letter-spacing: -1px;
+    margin-bottom:10px; font-weight: bold; text-align:center;
+    transition-duration: 1s;
+}
+.opacityProperty ul li:hover dl dt{
+    color: greenyellow;
+}
+
+.opacityProperty ul li dl dd{
+    margin:0;
+}
+
+.opacityProperty ul li dl dd time{
+    font-size:12px; color: black;
+    transition-duration: 1s;
+}
+.opacityProperty ul li:hover dl dd time{
+    color: crimson;
+}
