@@ -87,3 +87,16 @@ text-align: center; padding:20px;}
 .opacityProperty ul li:hover dl dd time{
     color: crimson;
 }
+.widthProperty, .boxsizingProperty > div{
+    width: 500px; margin:0 auto;
+    border-width : 10px; padding:20px;
+}
+.widthProperty{
+    background-color:#fc9393;
+    border-style: solid; border-color:#ff6a00;
+}
+.boxsizingProperty .content_Box{
+    box-sizing:content-box;
+    background-color: #93c5fc;
+    border-style: dashed; border-color: navy;
+}
