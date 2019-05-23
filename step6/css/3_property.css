@@ -87,6 +87,10 @@ text-align: center; padding:20px;}
 .opacityProperty ul li:hover dl dd time{
     color: crimson;
 }
+/* 
+    ! opacity 최대값 1(불투명) ~ 최소값 0(투명) 사이 입력.
+*/
+
 .widthProperty, .boxsizingProperty > div{
     width: 500px; margin:0 auto;
     border-width : 10px; padding:20px;
@@ -100,3 +104,27 @@ text-align: center; padding:20px;}
     background-color: #93c5fc;
     border-style: dashed; border-color: navy;
 }
+.boxsizingProperty .border_Box{
+    box-sizing: border-box;
+    background-color: greenyellow;
+    border-style: dotted; border-color: green;
+}
+/* 
+    ? box-sizing
+    * content-box (default) : width + padding + border 
+    * border-box : width = contentWidth + padding + border
+*/
+.shadowProperty h1{text-shadow:5px 10px 10px #666;}
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid red;
+    box-shadow: 8px 10px 2px #fc9393;
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 2px #fc9393;
+}
+/* 
+    ? shadow
+    * x축 간격, y축간격, 흐림(blur), spread(box-shadow)
+    ! inset을 넣으면 내부그림자로 전환.
+    todo - https://css3generator.com 에서 쉽게 만들기.
+*/
