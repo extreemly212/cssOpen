@@ -15,3 +15,51 @@ body{margin:0; background-color: #333;}
         todo - margin-bottom: 90px;
     */
 }
+.wrap header h1{padding: 0; margin: 0;}
+
+.wrap header nav{
+    position:absolute; right: 0; top: 30px;
+    width: 40%;
+}
+.wrap header nav ul{
+    border-width:1px 0 1px 0;
+    border-style: solid;
+    border-color: white;
+}
+.wrap header nav ul::after{
+    content:''; display: block; visibility: hidden;
+    clear: both;
+}
+.wrap header nav ul li{
+    width: 20%; float:left; padding: 10px 0;
+    min-width: 50px;
+    /* ! min-width : 가장 긴 컨텐츠길이를 기준으로 */
+}
+.wrap header nav ul li a{
+    color:#f0f0f0; font-size:12px; text-align: center;
+    border-left: 1px solid #e1e1e1;
+}
+.wrap header nav ul li:first-child a{
+    border-left:none;
+}
+
+.wrap ul.picList:after{
+    content:''; display: block; visibility: hidden;
+    clear: both;
+}
+.wrap ul.picList li{
+    width:30%; float:left; margin:0 5% 5% 0;
+}
+.wrap ul.picList li:nth-child(3n){
+    margin-right:0;
+}
+.wrap ul.picList li a img{
+    border:none; width:100%; opacity: 0.5;
+    transition-duration: 1s;
+}
+.wrap ul.picList li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size:12px; text-align: center; color:#a1a1a1;
+}
